@@ -20,3 +20,7 @@ grep '^NAME=' /etc/os-release | cut -d= -f2 | tr -d '"' >> os_name.txt
 echo "Create files"
 for i in {50..100}; do
   touch "${i}.txt"
+done
+sleep 5
+
+echo "Done"
