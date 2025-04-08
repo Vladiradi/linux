@@ -1,26 +1,14 @@
 #!/bin/bash
-echo "Hi I will show you date and process"
+dir="/opt/210125-m-be/Vladimir/files"
+mkdir -p "$dir"
+
+datemy=$(date +"%d%m%y")
+
 for i in {1..10}; do
-  date +"%H:%M:%S"
-  ps -aux --no-header | wc -l
-  sleep 5
-done
+    touch "$dir/${i}${datemy}"
+  done
 
-echo "Info about process"
-lscpu >> info.txt
-sleep 5
 
-echo "Info about OS"
-grep "NAME" /etc/os-release > os_name.txt
-sleep 5
-
-echo "Info about OS only NAME"
-grep '^NAME=' /etc/os-release | cut -d= -f2 | tr -d '"' >> os_name.txt
-
-echo "Create files"
-for i in {50..100}; do
-  touch "${i}.txt"
-done
-sleep 5
-
-echo "Done"
+#chmod +x /opt/210125-m-be/Vladimir/task_Vladimir.sh
+#icrontab -e
+#*/15 * * * * /opt/210125-m-be/Vladimir/task_Vladimir.sh
