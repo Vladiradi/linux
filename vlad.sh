@@ -9,6 +9,6 @@ for i in {1..10}; do
   done
 
 
-#chmod +x /opt/210125-m-be/Vladimir/task_Vladimir.sh
+#chmod +x /opt/210125-m-be/Vladimir/vlad.sh
 #icrontab -e
-#*/15 * * * * /opt/210125-m-be/Vladimir/task_Vladimir.sh
+#*/15 * * * * /opt/210125-m-be/Vladimir/vlad.sh
