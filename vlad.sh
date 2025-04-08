@@ -9,6 +9,6 @@ done
 
 
 
-#chmod +x /opt/210125-m-be/Vladimir/vlad.sh
-#icrontab -e
+#chmod +x vlad.sh
+#crontab -e
 #*/15 * * * * /opt/210125-m-be/Vladimir/vlad.sh
