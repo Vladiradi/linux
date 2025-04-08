@@ -11,4 +11,5 @@ done
 
 #chmod +x vlad.sh
 #crontab -e
-#*/15 * * * * /opt/210125-m-be/Vladimir/vlad.sh
+#*/15 * * * * /opt/210125-m-be/Vladimir/31.01.2025/vlad.sh
+
