@@ -1,12 +1,12 @@
 #!/bin/bash
-dir="/opt/210125-m-be/Vladimir/files"
-mkdir -p "$dir"
-
-datemy=$(date +"%d%m%y")
-
+dir="/opt/210125-m-be/Vladimir/31.01.2025"
+sudo mkdir -p "$dir"
+datepart=$(date +"%d%m%y")
 for i in {1..10}; do
-    touch "$dir/${i}${datemy}"
-  done
+    num=$(printf "%02d" "$i")
+    sudo touch "$dir/${num}${datepart}"
+done
+
 
 
 #chmod +x /opt/210125-m-be/Vladimir/vlad.sh
